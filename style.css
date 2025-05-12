@@ -1,0 +1,76 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
+body {
+  display: grid;
+  grid-template-rows: 45% 55%;
+}
+
+strong {
+  color: hsl(160deg, 100%, 30%);
+}
+
+header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: stretch;
+  align-items: center;
+}
+
+header .intro-chunk {
+  grid-column: 1;
+  justify-self: end;
+}
+
+.max-width-wrapper {
+  max-width: 80rem;
+}
+
+.intro-chunk {
+  width: 415px;
+}
+
+.intro-chunk p {
+  font-size: 1.25rem;
+}
+
+section {
+  background: #666666;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 8px solid #999999;
+}
+
+.card {
+  background: #ffffff;
+  border-bottom: 8px solid #999999;
+  width: 808px;
+  height: 312px;
+  padding: 0 1.5rem;
+}
+
+.card p {
+  font-size: 1.25rem;
+}
+
+.indented-heading {
+  background: #ffbf00;
+  width: 53%;
+  text-align: center;
+  font-size: 1.5rem;
+  border-bottom: 8px solid #cc9900;
+  position: relative;
+  left: -2rem;
+  padding: 1rem 0;
+}
